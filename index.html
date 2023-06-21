@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9ac768a2fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Asia</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <!-- navbar section -->
+    <div id="app">
+        <div class="navbar px-4 navbar-light bg-light">
+            <h2 class="navbar navbar-title text-info">Asia Burmese</h2>
+            <ul class="nav ">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link d-lg-inline d-none text-info">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about"  class="nav-link d-lg-inline d-none text-info">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact"  class="nav-link d-lg-inline d-none text-info">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#more"  class="nav-link d-lg-inline d-none text-info">more</a>
+                </li>
+            </ul>
+            <i class="fas fa-bars d-lg-none" @click="show"></i>
+            <ul class="nav  modalbox w-100" v-if="hide">
+                <li class="nav-item ">
+                    <a href="#home" class="nav-link text-info d-lg-none">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about"  class="nav-link text-info d-lg-none">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact"  class="nav-link text-info d-lg-none">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#more"  class="nav-link text-info d-lg-none">more</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+        <!-- middle section -->
+        <div class="card bg-transparent border-0">
+            <div class="card-body bagan"> 
+                <img src="image/photo1.jpg"alt="photo1" width="200">
+                <p>Bagan (Burmese: ပုဂံ; MLCTS: pu.gam, IPA: [bəɡàɰ̃]; formerly Pagan) is an ancient city and a UNESCO World Heritage Site in the Mandalay Region of Myanmar.[1] From the 9th to 13th centuries, the city was the capital of the Bagan Kingdom, the first kingdom that unified the regions that would later constitute Myanmar. During the kingdom's height between the 11th and 13th centuries, more than 10,000 Buddhist temples, pagodas and monasteries were constructed in the Bagan plains alone,[2] of which the remains of over 2200 temples and pagodas survive. </p>
+            </div>
+        </div>
+        <!-- about section -->
+        <div class="card" id="about">
+            <div class="card-header">More Detail Information </div>
+            <div class="card-body">
+                <div class="detail1">
+                    <img src="image/photo2.jpg" alt="photo2" width="100%">
+                    <p class="text-primary text-center">ShweDagon Pagoda</p>
+                </div>
+                <div class="detail2">
+                    <img src="image/photo2.jpg" alt="photo3" width="100%">
+                    <p class="text-primary text-center">ShweDagon Pagoda</p>
+                </div>
+                <div class="detail1">
+                    <img src="image/photo2.jpg" alt="photo2" width="100%">
+                    <p class="text-primary text-center">ShweDagon Pagoda</p>
+                </div>
+                <div class="detail1">
+                    <img src="image/photo2.jpg" alt="photo2" width="100%">
+                    <p class="text-primary text-center">ShweDagon Pagoda</p>
+                </div>
+                <div class="detail1">
+                    <img src="image/photo2.jpg" alt="photo2" width="100%">
+                    <p class="text-primary text-center">ShweDagon Pagoda</p>
+                </div>
+                <div class="detail1">
+                    <img src="image/photo2.jpg" alt="photo2" width="100%">
+                    <p class="text-primary text-center">ShweDagon Pagoda</p>
+                </div>
+                <div class="detail1">
+                    <img src="image/photo2.jpg" alt="photo2" width="100%">
+                    <p class="text-primary text-center">ShweDagon Pagoda</p>
+                </div>
+                <div class="detail1">
+                    <img src="image/photo2.jpg" alt="photo2" width="100%">
+                    <p class="text-primary text-center">ShweDagon Pagoda</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact section -->
+        <div class="contact-main">
+            <div class="contact">
+                <div>
+                    <span>Contact</span>
+                    <a href="mailto:nyinyi@gmail.com" class="d-block m-2 ">nyinyi@gmail.com</a>
+                    <a href="tel:nyinyi@gmail.com" class="d-block m-2">95+944335589</a>
+                    <a href="viber:nyinyi@gmail.com" class="d-block m-2">95+942277889</a>
+                </div>
+            </div>
+            <div class="logo">
+                <span>App With Contact</span>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-viber"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-telegram"></i>
+            </div>
+        </div>
+        
+        <script src="app.js"></script>
+</body>
+</html>
